@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0063)https://www.risklatte.xyz/Articles/QuantitativeFinance/QF75.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="gr__risklatte_xyz"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/style.css" media="screen" rel="stylesheet" type="text/css">
+<style type="text/css">
+.style11 {
+	color: #093D72;
+	font-size: 15px;
+	font-weight:700;
+}
+
+.style1a{
+	font-size: 17px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	
+}
+
+.style1c{
+	font-size: 14px;
+	font-family: "Book Antiqua", "Bookman Old Style";
+	
+}
+
+.style1b{
+	font-size: 13px;
+	font-family: "Book Antiqua", "Bookman Old Style";
+	
+}
+
+.style13 {color: #696969}
+ul{
+line-height: 18px;
+list-style-type:none;
+margin-left: 10px;
+padding-left:05px;
+
+}
+
+li span{
+margin-left:0px;
+padding-left:0px;
+
+}
+</style>
+
+</head>
+
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+   
+   <title>Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better?</title>
+<div style="width:980px; margin:0 auto; "> <!-- Start Page Division -->
+<table width="100%">
+	<tbody><tr>
+	<td><!-- Start Page Header -->
+	<table width="100%">
+		<tbody><tr><td>
+	
+	 <!-- Start Header -->
+	 
+		
+<link href="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/dropdown.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/default.css" media="screen" rel="stylesheet" type="text/css">
+<link href="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/css" rel="stylesheet" type="text/css">
+
+<table width="100%">
+		<tbody><tr><td style="padding-bottom:10px"><a href="https://www.risklatte.xyz/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/RiskLatteNewLogo.jpg" style="height:35.41px; width:253px;" border="0"></a></td></tr>	<!-- Logo -->
+		<tr><td width="100%"> <!-- Start Menu -->
+			<ul class="dropdown dropdown-horizontal">
+				<!--<li><a href="https://www.risklatte.xyz/">Home</a></li>-->
+				<li><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF75.php#">Articles</a>
+					<ul class="dropdownsublist dropdownsublist-vertical">
+						<li><a href="https://www.risklatte.xyz/Articles/Markets/index.php">Financial Markets &amp; Trading</a></li>
+						<li><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/index.php">Quantitative Finance</a></li>
+						<li><a href="https://www.risklatte.xyz/Articles/History/index.php">History of Finance</a></li>
+						<li><a href="https://www.risklatte.xyz/Articles/FEAnalysis/index.php">Financial and Engineering Mathematics</a></li>
+						<li><a href="https://www.risklatte.xyz/Articles/EBStudies/index.php">Economics &amp; Business Studies</a></li>
+					</ul>
+				</li>
+				<li><a href="https://www.risklatte.xyz/media/">Media</a></li>
+				<li><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF75.php#">Education</a>
+					<ul class="dropdownsublist dropdownsublist-vertical">
+						<li><a href="https://www.risklatte.xyz/Education/CFE/index.php">CFE</a></li>
+						<li><a href="https://www.risklatte.xyz/Education/Quizzes/index.php">Quizzes</a></li>
+						<li><a href="https://www.risklatte.xyz/Education/JobInterviews/index.php">Job Interviews</a></li>
+						<li><a href="https://www.risklatte.xyz/Education/Seminar/index.php">Quant Finance Seminars</a></li>
+						<li><a href="https://www.risklatte.xyz/Education/FEProblems/index.php">Financial Engineering Problems</a></li>
+						<li><a href="https://www.risklatte.xyz/Education/CaseStudies/index.php">Case Studies</a></li>
+						<li><a href="https://www.risklatte.xyz/Education/FinancialEducation/index.php">Quant Finance Courses</a></li>
+					</ul>
+				</li>
+				<li><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF75.php#">Publications</a>
+					<ul class="dropdownsublist dropdownsublist-vertical">
+						<li><a href="https://www.risklatte.xyz/Publications/Books/index.php">Books</a></li>
+						<li><a href="https://www.risklatte.xyz/Publications/VanillaTimes/index.php">Vanilla Times</a></li>
+						<li><a href="https://www.risklatte.xyz/Publications/InterstellarDays/index.php">Our Interstellar Days</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF75.php#">Notes</a>
+					<ul class="dropdownsublist dropdownsublist-vertical">
+						<li><a href="https://www.risklatte.xyz/Blogs/Finance/index.php">Finance, etc.</a></li>
+						<li><a href="https://www.risklatte.xyz/Blogs/OnATangent/index.php">On A Tangent</a></li>
+						<li><a href="https://www.risklatte.xyz/Blogs/IMA/index.php">Investments and Market Analysis</a></li>
+						<li><a href="https://www.risklatte.xyz/Blogs/quantlatte/index.php">QuantLatte</a></li>
+						
+						
+					</ul>
+				</li>
+				<li><a href="https://www.risklatte.xyz/testimonial.html">Testimonials</a></li>
+				
+				
+				
+			</ul>
+		</td></tr> <!-- End Menu -->
+	</tbody></table>	</td></tr>
+	
+	 <!-- End Header -->
+	</tbody></table>
+	</td><!-- End Page Header -->
+	</tr>	
+	<tr><td style="padding:0px 20px 0px 20px"></td></tr>
+	<tr>
+	<td valign="top">
+	<table width="100%" border="0" style="vertical-align:top">
+	<tbody><tr> 
+	<!-- Start Page Body -->
+	
+	
+		<td width="680px" bgcolor="#ffffff" style="vertical-align:top">	
+		
+		<!-- Start Left Block -->
+		
+		
+			
+			<table width="100%">
+			
+			
+				
+				<tbody><tr><td width="680px" style="padding:0px 10px 10px 10px;">
+				
+				<p><strong><font style="font-size:24px">Binomial Trees vs. Monte Carlo Simulation-Which one is better?</font></strong></p>						
+				<p><font style="font-size:15px"><i>Rahul Bhattacharya<br>May 31, 2006</i></font></p><font style="font-size:15px">
+									
+				
+
+				
+		<p align="justify" class="style1a">What are Numerical methods? And how are numerical methods such as a Binomial Tree or a Monte Carlo simulation technique different from closed form solution? Which one is better?</p>
+                                <p align="justify" class="style1a">Both binomial trees and monte carlo simulation are numerical techniques. Each tries to approximate the value of a derivative using numerical techniques-evaluating small steps in an area and then aggregating the sum of those steps.</p>                             
+                                <p align="justify" class="style1a">Let's take an example. It is simple reasoning: if you need to estimate the area of a room, then you multiply the length with the breadth and you get the answer. So just use the formula for the area and input the length and the breadth. This is a closed form solution. But many a times the room is not a perfect square or not a square at all, and even then you can find some formula for the area, such as if the room is a parallelogram or a trapezoid you can still find a formula for the area. But a conceptually simpler (though computationally more complicated) approach is why bother with the formula for the area of the whole room. Rather divide the room into very small shapes of square (or a rectangle-as is the case in numerical integration) and keep measuring the area of these small squares and then simply assume that there are a large number of these square and you add them all up. That is the area of the room. So no matter what is the shape or size of the room you can always find the area. This is numerical estimation. </p>
+                                <p align="justify" class="style1a">Despite its great advantages and ease of use, Binomial trees have two serious drawbacks:</p>
+                                <ol>
+                                  <li class="style1a">It is discrete and therefore assumes all events (coupons, barriers, triggers, call values, etc.) to take place at these discrete nodes and certainly adding more and more branches and nodes will increase the accuracy of the estimation and in the limiting case this tree will approximate a closed form solution (remember that a closed form solution is an ideal one, if it can be estimated). This discreteness can cause many estimation problems, especially for exotic structures; </li><br><br>
+                                  <li class="style1a">The second major drawback of trees is that they (at least the simple ones) cannot accommodate varying volatility between the nodes; a varying volatility (changing volatility, volatility turbulence, skew, etc.) will cause the tree to bend and distort its shape. There are stochastic parameter trees (where the volatility as well as the underlying spot changes in sync) but they are pretty complicated to use and implement. Therefore, a lot of quants are switching over from trees to lattices (a square lattice) which takes care of this point. </li>
+                                </ol> 
+								<p align="justify" class="style1a">Monte Carlo Simulation on the other is a very powerful methodology to estimate the value (price) of anything for which a closed form solution cannot be found (or is too difficult to calculate). It is also a numerical method, like the tree, but in our opinion a much more powerful technique. The reason being that it simulates based on a Gaussian distribution (as opposed to a binomial distribution) which is perhaps a slightly more accurate description of the asset return distribution. Besides, MC Simulation has these two features which we think is pretty powerful:</p><br>
+								<ol>
+								  <li class="style1a">No matter what the asset (or assets) and the nature of their interaction you can completely strip of the mathematical construct of these assets and simply assuming a random normal path (geometric Brownian motion) simulate the forward movement of the asset(s); The same is also true for binomial trees (and any numerical technique) but in MC Sim you get a continuous distribution of asset returns (and not a discrete one). So who cares how complex the structure is or the product is-all we need is the underlying price path;</li><br><br>
+							      <li class="style1a">Secondly, using a series of <strong>IF....THEN....ELSEIF....THEN </strong> statements we can simulate the payoff at termination. We don't need to know an input-output mathematical relationship (Black-Scholes equation for example) but simply start with an initial value, and then using a random normal path, use IF�THEN�ELSE structure to find the terminal value. Once again, it can be done in a binomial tree as well but in MC Sim we get a continuous dist. As programmers and code writers you can appreciate this better. It is like writing a sub-routine which loops and returns a value.</li>
+							  </ol>
+							  <p align="justify" class="style1a"> Anyway, to cut a long story short and to precisely answer our initial question as to which technique is better then we will say: if you do a 1 million run Monte Carlo you will get a much more robust result than a 3,000 period tree (at least we feel that way). Most banks use between 20,000 to 30,000 runs for pricing purposes and maybe around 150,000 runs for risk management purposes.</p>
+								  <hr>
+							<p align="center"><a href="javascript:if (window.print != null) { window.print(); } else { alert(&#39;Your browser does not support this feature. Please select Print from the File menu.&#39;); }" class="copyRight"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/print.gif" width="60" height="11" border="0" align="absmiddle"></a></p>
+                             <p><font color="#000000" style="font-size:17px;">Any comments and queries can 
+								be sent through our </font><a href="https://www.risklatte.xyz/Footer/Feedback.php" target="_blank"><font color="#0000FF" style="font-size:18px">
+								web-based form</font></a>.</p>
+
+ <p align="right"><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/index.php" target="_self"><strong><font color="#0000FF" style="font-size:20px"><u>
+							More on Quantitative Finance &gt;&gt;</u></font></strong></a></p>
+                              <p align="right"><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF75.php#top"><font color="#0000FF" style="font-size:14px">back to top</font></a> <img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/btp.gif" width="12" height="10"></p>
+						
+				</font></td></tr>
+				
+				
+			</tbody></table>
+		</td>	<!-- End Left Block -->
+		
+		
+		
+		
+		<td style="border:20px"></td>
+		
+		<td width="260px" bgcolor="#ffffff" style="vertical-align:top; padding-top:100px;">	<!-- Start Right Block -->
+		
+		<table width="260px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+
+<tbody><tr><td bgcolor="#DDD9EF" class="style13">
+	
+		
+
+<font style="font-size:20px"> Videos </font></td></tr>
+	 <tr><td>&nbsp;</td></tr>
+	<tr><td>			
+			
+	<div>
+		<a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/onkar.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/vineeth_kumar.png" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/rohith_reddy.png" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/svl4.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/svl1.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/praveen_singh.png" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/svl3.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/svl2.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/aditya_darak.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/sohit_nayak.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/alisha.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/ramitPahwa.png" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/peter-carr-talks-about-risk-lattes-global-quiz-competition.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/standing-at-the-crossroads-of-physics-and-finance.jpg" class="thumbnails" width="80" height="50" border="0"></a><a href="https://www.risklatte.xyz/media/"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/greggriffin.jpg" class="thumbnails" width="80" height="50" border="0"></a>	</div>
+		</td></tr><tr><td>&nbsp;</td></tr>
+		
+
+
+
+<tr>
+<td>
+	
+		<p style="width:100%; background-color:#DDD9EF">	
+		<span class="style13"><font size="+1">More from Articles</font></span>
+		</p>
+		<ul>
+		
+		
+		<li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/History/H08.php">Searching for the Most Beautiful Equation in Finance</a></b></small></li>	
+		
+		 <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/Markets/M09.php">Where does a Black Swan Come from?</a></b></small></li>
+
+		<li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/History/H07.php">Napoleon on Wall Street: Advent of the Stochastic Volatility Models</a></b></small></li>
+			
+		 <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF206.php">The Remarkable Power of the Monte Carlo Method</a></b></small></li>
+		 <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF205.php">Mean Reversion and the Half-Life of Interest Rates</a></b></small></li>
+		
+        <!--<li type="disc" style="color:#666666"><small><b><a href="../Markets/M08.php">Mean Reversion in the Markets and Trading Strategy</a></b></small></li>
+        <li type="disc" style="color:#666666"><small><b><a href="../QuantitativeFinance/QF_204.php">Arc Sine Law of Brownian motion and the Mathematics of Luck</a></b></small></li>-->
+		</ul>
+		<hr color="#BFC0C1">
+	
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr><td width="260px">
+							
+						 <p style="padding-top:10px"><a href="https://www.risklatte.xyz/Publications/Books/index.php"><img src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/Greeks.jpg" border="0" align="center" height="260" width="260"></a></p>	
+							
+						</td></tr>	
+						
+						
+<tr>
+<td>
+	<p style="padding-top:10px">	
+		
+		</p><p style="width:100%; background-color:#DDD9EF">	
+		<span class="style13"><font size="+1">Quantitative Finance</font></span>
+		</p>
+		<ul>
+		
+		
+		 <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF206.php">The Remarkable Power of the Monte Carlo Method</a></b></small></li>
+		
+		 <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF205.php">Mean Reversion and the Half-Life of Interest Rates</a></b></small></li>
+		 
+		  <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF_204.php">Arc Sine Law of Brownian motion and the Mathematics of Luck</a></b></small></li>
+		  
+		   <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF_203.php">The Essence of Monte Carlo Methodology</a></b></small></li>
+		   
+		    <li type="disc" style="color:#666666"><small><b><a href="https://www.risklatte.xyz/Articles/QuantitativeFinance/QF_202.php">Applying PCA: Swap Spread Price Discovery in an Illiquid Market</a></b></small></li>
+		</ul>
+		
+		<hr color="#BFC0C1">
+		
+</td>
+</tr>
+
+
+<tr><td width="260px">
+							
+						</td></tr>	 
+
+</tbody></table>
+			
+			
+		</td>	<!-- End Right Block -->
+	</tr> <!-- End Page Body -->
+	</tbody></table>
+	</td>
+	</tr>	
+</tbody></table>
+
+<br><br><hr>
+<center><a href="https://www.risklatte.xyz/"><img id="risk-icon" style="margin-right: 0px;" alt="risklatte" src="./Risk Latte - Binomial Trees vs. Monte Carlo Simulation-Which one is better__files/rl-logo-transparent.png" height="28.41px" width="180px"></a></center><br><center><p><a href="https://www.youtube.com/user/risklatte"><i class="fa fa-youtube-play fa-2x" title="YouTube"></i></a> <a href="https://www.facebook.com/risklatte/"><i class="fa fa-facebook fa-2x" title="Facebook"></i></a></p></center>
+
+
+<div id="footer">
+
+
+
+		<!-- <p><hr /></p> -->
+
+		<p align="center">
+
+			<a href="https://www.risklatte.xyz/OurCompany.php#contactUs"><font color="#6D7B8D">Contact Us / </font></a>
+			<a href="https://www.risklatte.xyz/OurCompany.php"><font color="#6D7B8D">About Us / </font></a>
+			<a href="https://www.risklatte.xyz/testimonial.html"><font color="#6D7B8D">Testimonials / </font></a>
+			<a href="https://www.risklatte.xyz/Footer/TermsOfUse.php"><font color="#6D7B8D">Terms of Use  </font></a>
+			<!-- <a href="https://www.risklatte.xyz/Footer/PrivacyPolicy.php" ><font color="#6D7B8D">Privacy Policy / </font></a>
+			<a href="https://www.risklatte.xyz/feedback/"><font color="#6D7B8D">Feedback / </font></a>
+			<a href="https://www.risklatte.xyz/Footer/AdvertiseWithUs.php" ><font color="#6D7B8D">Advertising  </font></a> -->
+			<!--<a href="sitemap.php" ><font color="#6D7B8D">Site Map</font></a>-->
+
+
+
+
+
+
+			 </p>
+
+
+	<p align="center"><font color="#6D7B8D">Risk Latte Americas Inc. (C) 2014-2019</font></p>
+
+</div>
+
+</div><!-- End Page Division -->
+
+
+</body></html>

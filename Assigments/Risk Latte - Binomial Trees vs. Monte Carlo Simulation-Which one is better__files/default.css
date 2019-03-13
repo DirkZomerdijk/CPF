@@ -1,0 +1,119 @@
+ul.dropdown,ul.dropdownsublist
+{
+	font-weight:700;
+}
+
+ul.dropdown li
+{
+	 background:#fff!important; 
+	border-bottom:transparent solid 3px;
+	float:left;
+	margin:0;
+	padding:10px;
+
+}
+
+ul.dropdownsublist li
+{
+background:#fff!important; 
+	border-bottom:transparent solid 3px;
+	border-color:#fff;
+	padding:10px;
+}
+
+ul.dropdownsublist li.hover
+{
+	background-color:#DEF3D0;
+}
+
+ul.dropdown li:hover
+{
+	background-color:#DEF3D0;
+	border-bottom:#333 solid 3px;
+}
+
+ul.dropdown a:visited,ul.dropdownsublist a:visited
+{
+	color:#000;
+	font-style:normal;
+	font-weight:500;
+	text-decoration:none;
+	text-transform:none;
+}
+
+ul.dropdown a:hover
+{
+	font-style:normal;
+	font-weight:500;
+	text-decoration:none;
+	text-transform:none;
+}
+
+ul.dropdownsublist a:hover
+{
+	font-style:normal;
+	font-weight:500;
+	text-decoration:none;
+	text-transform:none;
+}
+
+ul.dropdown a:active,ul.dropdownsublist a:active
+{
+	color:#000;
+	font-style:normal;
+	font-weight:500;
+	text-decoration:none;
+	text-transform:none;
+}
+
+ul.dropdown a:link
+{
+	color:#000;
+	font-style:normal;
+	font-weight:500 !important;
+	text-decoration:none;
+	text-transform:none;
+}
+
+ul.dropdownsublist a:link
+{
+	color:#000;
+	font-style:normal;
+	font-weight:500;
+	text-decoration:none;
+	text-transform:none;
+}
+
+ul.dropdown ul,ul.dropdownsublist ul
+{
+	margin-top:3px;
+	width:150px;
+}
+
+.dropdownsublist.dropdownsublist-vertical
+{
+	box-shadow:0 0 3px #999;
+}
+
+ul.dropdown a:link
+{
+	font-family:Lato !important;
+	font-size: 15px !important;
+}
+
+ul
+{
+	color:#666;
+	font-size:95%;
+	list-style-type:disc;
+	margin-left:10px;
+	margin-top:5px;
+	padding-left:6px;
+	padding-top:0;
+}
+
+li span
+{
+	margin-left:0;
+	padding-left:0;
+}

@@ -1,0 +1,25 @@
+a {
+	text-decoration: none;
+	color: #093D72;
+}
+.thumbnails {
+	margin: 3px;
+}
+
+/*articles section*/
+.ArticleHeading{
+	font-size: 2em !important;
+	font-family: Lato;
+}
+.fontli {
+	color: #093D72 !important;
+	font-size: 14px !important;
+	font-weight: 500 !important;
+}
+
+.style1b {
+	font-size: 14px;
+	font-family: Lato,"Times New Roman", Times, serif;
+	color: #666 !important;
+	font-style: italic !important;
+}

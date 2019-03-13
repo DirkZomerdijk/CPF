@@ -1,0 +1,5 @@
+Verhoudingen van grid S/T, sensitivity.
+FTCS: kan de vectoren niet vinden.
+Delta goed berekend?
+
+Wel allemaal in de buurt van bs
